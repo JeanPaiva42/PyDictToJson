@@ -416,15 +416,31 @@ rules = {
     "?*x downtime ?*y": [
         "http://stream1.gifsoup.com/view2/2209206/red-pandas-playing-o.gif",
         ],
+    "default_responses": [
+        "Very interesting",
+        "I am not sure I understand you fully",
+        "What does that suggest to you?",
+        "Please continue",
+        "Go on",
+        "Do you feel strongly about that?",
+        "Tell me more?",
+        "Yes .. and?",
+        "mmmm.",
+        "And then what?",
+        "Mmkay.",
+        "What makes you say that?",
+        "Aaaaah.",
+        "Sure.",
+    ]
+
     }
+
 
 
 j = json.dumps(rules, indent=4)
 f = open('resultado.json', 'w')
 print >> f, j
 f.close()
-
-
 
 
 
